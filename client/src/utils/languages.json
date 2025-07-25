@@ -1,0 +1,22 @@
+[
+    {
+        "label": "JavaScript",
+        "value": "javascript",
+        "symbol": "⚡"
+    },
+    {
+        "label": "Python",
+        "value": "python",
+        "symbol": "🐍"
+    },
+    {
+        "label": "C++",
+        "value": "cpp",
+        "symbol": "⚙️"
+    },
+    {
+        "label": "TypeScript",
+        "value": "typescript",
+        "symbol": "📜"
+    }
+]

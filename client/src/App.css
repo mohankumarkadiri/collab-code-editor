@@ -1,0 +1,12 @@
+@font-face {
+    font-family: "SansLatin";
+    src: url("./assets/Fonts/Sans-latin.woff2");
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+}
+
+* {
+    box-sizing: border-box;
+}
