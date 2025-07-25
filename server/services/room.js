@@ -1,14 +1,5 @@
 const roomModel = require('../models/room');
-const { Redis } = require('ioredis');
-const redisClient = new Redis();
-
-redisClient.on('ready', () => {
-    console.log('✅ Redis Connected successfully');
-});
-
-redisClient.on('error', (err) => {
-    console.error('Redis Error:', err);
-});
+const redisClient = require('../utils/redisClient');
 
 
 const isUserInRoom = async (roomId, userEmail) => {
