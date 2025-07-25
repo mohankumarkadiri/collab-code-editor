@@ -2,6 +2,46 @@
 
 A full-stack real-time collaborative code editor where multiple users can write, edit, and view code simultaneously. The platform supports Google login, protected rooms, role-based access, and seamless collaboration with real-time code synchronization.
 
+![Demo GIF](./demo/demo.gif)  
+  _Live collaborative editing demo_
+
+## System Flow Chart
+```mermaid
+graph TD
+    A[User lands on Home Page] --> B[Login with Google]
+    B --> C{Authenticated?}
+    C -->|No| A
+    C -->|Yes| D[Create or Join Room]
+
+    D -->|Creates Room| E[User becomes Host]
+    D -->|Joins Room with Code| F{Check if Invited}
+    F -->|Not Invited| A
+    F -->|Invited| H[User Joins Room]
+
+    E --> H
+    H --> I[User list updated in real-time]
+    H --> J[Connect to Socket.IO room]
+
+    J --> K[Collaborative Code Editor Monaco]
+    K --> L[Code Sync via WebSocket]
+    K --> M[Cursor Sync via WebSocket]
+    K --> N[Language Sync by Host]
+
+    I --> O[User leaves or disconnects]
+    O --> P[Emit user-left event]
+    P --> I
+
+    subgraph Settings [Custom Editor Settings]
+        K1[Font Size]
+        K2[Theme]
+        K3[Tab Width]
+        K4[Minimap]
+        K5[Wrap Text]
+    end
+
+    K --> Settings
+```
+
 ---
 
 ## MVP Features Completed
@@ -84,10 +124,7 @@ Here are key enhancements planned for upcoming versions:
 
 ---
 
-## Demo
-
-- ![Demo GIF](./demo/demo.gif)  
-  _Live collaborative editing demo_
+## Screenshots
 
 - ![Google login screen](./demo/loginPage.png)
 - ![Room creation/join flow](./demo/HomePage.png)
