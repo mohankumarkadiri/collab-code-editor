@@ -89,7 +89,7 @@ Here are key enhancements planned for upcoming versions:
 - ![Demo GIF](./demo/demo.gif)  
   _Live collaborative editing demo_
 
-- ![Google login screen](./demo/LoginPage.png)
+- ![Google login screen](./demo/loginPage.png)
 - ![Room creation/join flow](./demo/HomePage.png)
 - ![Monaco Editor with real-time sync](./demo/codeSync.png)
 - ![User list with join/leave notifications](./demo/userJoin.png)
