@@ -2,6 +2,8 @@
 
 A full-stack real-time collaborative code editor where multiple users can write, edit, and view code simultaneously. The platform supports Google login, protected rooms, role-based access, and seamless collaboration with real-time code synchronization.
 
+[CLICK HERE](demo/demo.mp4) to download and play the video locally.
+
 ![Demo GIF](./demo/demo.gif)  
   _Live collaborative editing demo_
 
