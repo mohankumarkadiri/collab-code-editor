@@ -1,5 +1,5 @@
 const CORS_OPTIONS = {
-    origin: "http://localhost:5173",
+    origin: process.env.UI_BASE_URL,
     credentials: true,
     methods: ["GET", "POST"],
 };
